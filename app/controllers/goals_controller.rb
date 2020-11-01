@@ -22,7 +22,7 @@ class GoalsController < ApplicationController
     if @goal.save
      @status = true
     else
-     @status = true
+     @status = false
     end
   end
 
@@ -31,7 +31,7 @@ class GoalsController < ApplicationController
     if @goal.update(goal_params)
      @status = true
     else
-     @status = true
+     @status = false
     end
   end
 
